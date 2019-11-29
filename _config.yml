@@ -1,7 +1,7 @@
 # Site settings
 title: 2OutFull
 email: ggamini7@gmail.com
-description: Um lindo tema feito para jekyll e com o <3
+description: Give us A+
 baseurl: ""
 url: "http://2outfull.Github.io"
 
@@ -16,7 +16,7 @@ github: https://github.com/2OutFull
 disqus_shortname: "hamin"
 google_analytics: UA-52446115-1
 
-paginate: 2
+paginate: 10
 comments: true
 paginate_path: "/page/:num"
 

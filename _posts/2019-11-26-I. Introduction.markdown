@@ -5,5 +5,33 @@ date:   2019-11-26 18:10:08
 categories: Lorem
 comments: true
 ---
-- Motivation: Why are you doing this? <br>
-- What do you want to see at the end? <br>
+## - Motivation: Why are you doing this? <br>
+
+Modern sports are data-basedsports. Among them, MLB is based on high-level data technologies such as Sabermetrics. <br>
+These data technologies are also easily accessible when we watching the MLB game of Korean players'such as Ryu Hyun-jin, Choo Shin-soo and Choi Ji-man. <br>
+However, there is alimitation that it is one-way data providing. That means we are only able <br> toaccess data that broadcaster and commentators provided. We cannot get the datathat we are wondering. <br>
+So we want to<br> provideuser-friendly baseball data using NUGU AI speakers in voice to provide a lot ofinteresting information that users want.<br> 
+We will use MLB-StatsAPI(https://pypi.org/project/MLB-StatsAPI/)and other APIs to build the application. <br>
+And we will use<br> NUGU API and speakertoo. For server side, we will use AWS EC2(provisional). <br>
+First, we provide gameschedule for requested teams and players. And then if users ask some data,application will provide data in voice. <br>
+In particular, we will provide a variety of interesting data, including basicstats, and situational statistic data etc focusing on Korean players We will also provide avoice function that explains baseball's stat analysis terms to help usersunderstand them and other external element data. <br>
+Finally, by theseprovided data, we build simple algorithm to predict the winner, and tell theusers when asked.<br>
+만일 빠른 시일 내에 위 프로그램을 완성한다면, 해당 프로그램의 틀을 기반으로 football-data-api==0.0.6(https://pypi.org/project/football-data-api/0.0.6/)와 같은<br> API를 사용하여 사용자가 원하는 정보를 제공하는 시스템을 다른 스포츠 버전으로도 만들 계획입니다.
+
+<br>
+<br>
+## - What do you want to see at the end? <br>
+
+예시)<br>
+	-선수의 스탯/성적<br>
+		<질문> "아리아, 류현진 작년 포스트 시즌 성적 알려줘" <br>
+		<답변> "류현진의 2018년 포스트시즌 성적은 4경기 1승 2패 ERA 7.71 WHIP 1.50입니다."<br>
+	- 경기 일정<br>
+		<질문> "아리아, 황의조 경기 언제 해?"<br>
+		<답변> "황의조의 보르도의 가장 가까운 경기는 한국시간기준 11월 24일 일요일 23시 입니다."<br>
+	- 야구 용어<br>
+		<질문> "아리아, WHIP이 뭐야? "<br>
+		<답변> "WHIP이란 투수의 이닝 당 출루 허용률로 ... (이하생략)"<br>
+
+
+

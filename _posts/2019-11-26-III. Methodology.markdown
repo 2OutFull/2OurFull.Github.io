@@ -5,5 +5,13 @@ date:   2019-11-26 18:15:08
 categories: Lorem
 comments: true
 ---
-- Explaining your choice of algorithms (methods) <br>
-- Explaining features or code (if any)
+
+
+(서버) django<br>
+	1. https://www.django-rest-framework.org/tutorial/quickstart/<br>
+(야구 - 선수 스탯) <br>
+	1. https://pypi.org/project/MLB-StatsAPI/<br>
+	2. https://toddrob99.github.io/MLB-StatsAPI/<br>
+  (nugu)<br>
+	1. https://sharedlp.sk.com/dlp/login/main.do<br>
+	2. https://developers-doc.nugu.co.kr/<br>
