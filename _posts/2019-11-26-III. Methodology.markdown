@@ -87,6 +87,24 @@ return_stat = statsapi.player_stat_data(
 ```
 이제 리턴값의 종류를 str인지 int인지 구별하여 적절한 대답을 할 수 있도록 구분한뒤,
 선수이름,요구한 스텟,요구한 스텟의 결과값을 NUGU에 전송한다.
+```{python}
+ if type(return_stat) is str:
+            return_stat = float(return_stat)
+        else:
+            return_stat = str(return_stat) + "회"
+
+        response_builder = {
+            "version": "2.0",
+            "resultCode": "OK",
+            "output": {
+                "pitcher": player,
+                "pitcher_stat": request_stat,
+                "return_pitcher_stat": return_stat,
+            },
+        }
+        return Response(response_builder)
+```
+
 ## 2. NextGame
 
 ## 3. Scheduler
