@@ -1,6 +1,6 @@
 ## Ⅰ. Introduction 
 
-### 1) Motivation of our project, 2OutFull / Expected results <br>
+### [1] Motivation of our project, 2OutFull / Expected results <br>
 For too long, data has been treated as a liability and not an asset, often due to challenges to collecting, storing and managing massive volumes of it. Yet the ever-improving capabilities of big data platforms are creating undeniable opportunities for industries across the board – from medicine, construction, retail, to banking.
 Therefore, data is becoming recognized as one of the most important assets for innovation today, especially in sports, where benefits are reaped by both sportsmen and viewers alike. What distinguishes the winners from losers when it comes to data-driven sports, is that they have developed the ability to manage data as an asset. Because of this importance, moderen sports are becoming data-based sports. We are witnessing data becoming entrenched in sports, especially in baseball. MLB, which stands for Major League Baseball, is based on high-level data analytic technologies like Sabermetrics. Information that people can get from these data technologies is essential for game watchers because they can predict their favorite team or player's winning probabilities by using it.
 
@@ -8,10 +8,9 @@ However, there is a limitation when people want to use the information that it i
 <br>
 <br>
 
-### 2) Functions we provide
+### [2] Functions we provide
+In MLB, there are a few Korean players running overseas. The list of the name of players and teams is as follows:
 <br>
-In MLB, there are a few Korean players running overseas. The list of the name of players and teams is as follows: <br>
-
 Name | Team name
 ---- | ----
 Ryu Hyun-Jin | Los Angeles Dodgers
