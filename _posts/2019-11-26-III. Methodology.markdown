@@ -195,7 +195,7 @@ class NextGame(APIView):
 
 
 ## 3. Scheduler
-처음에는 MLB 야구팀의 일정만 추가하려했지만, 더 많은 스포츠를 담기 위해 리그와 팀을 추가하였다. 검색할 수 있는 리그의 수는 137개로 해당 리그의 알 수 있는 모든 일정검색 기능을 추가하였다. 나중에 코드를 추가하였기 때문에 if문으로 기존의 야구팀의 일정 검색과 나머지 리그,팀의 일정 검색을 나누었다. 먼저, NUGU로 'team_name'을 받을 수 있게 request를 해주었다.
+처음에는 MLB 야구팀의 일정만 추가하려했지만, 더 많은 스포츠를 담기 위해 리그와 팀을 추가하였다. 검색할 수 있는 팀의 수는 137개로 해당 리그의 알 수 있는 모든 일정검색 기능을 추가하였다. 나중에 코드를 추가하였기 때문에 if문으로 기존의 야구팀의 일정 검색과 나머지 리그,팀의 일정 검색을 나누었다. 먼저, NUGU로 'team_name'을 받을 수 있게 request를 해주었다.
 ```{python}
     def post(self, request):
         data = request.data["action"]
@@ -267,3 +267,64 @@ team_id = mlb_team_list[request_team]
 ```
 
 ## 4. League_Scheduler
+
+처음에는 MLB 야구팀의 일정만 추가하려했지만, 더 많은 스포츠를 담기 위해 리그와 팀을 추가하였다. 검색할 수 있는 리그의 수는 137개로 해당 리그의 알 수 있는 모든 일정검색 기능을 추가하였다. 나중에 코드를 추가하였기 때문에 if문으로 기존의 야구팀의 일정 검색과 나머지 리그,팀의 일정 검색을 나누었다. 먼저, NUGU로 'league_name'을 받을 수 있게 request를 해주었다.
+```{python}
+    def post(self, request):
+        data = request.data["action"]
+        request_league = data["parameters"]["league_name"]["value"]
+        with open("configure_package/available_league.json") as league_id:
+            league_list = json.load(league_id)
+```
+야구팀의 일정 검색의 경우, Next_Game과 비슷한 로직을 사용하였다. 팀의 한글 이름을 NUGU를 통해 받고, configure_package에 저장되어 있는mlb_i19n_team_list.json을 통해 해당 팀id를 추출하였다. output인 `date_and_teams` 배열을 길게하여 모든 일정을 소화하고 싶었지만, NUGU의 발화시간을 고려하여 다음 3개의 경기만 배열에 저장하도록 설정하였다.
+```{python}
+        league_id = league_list(request_league)
+        other_league_schedule_url = f"https://www.thesportsdb.com/api/v1/json/1/eventsnextleague.php?id={league_id}"
+        r = requests.get(other_league_schedule_url).text
+        three_events = json.loads(r)["events"][2:5]
+        response_builder = {
+            "version": "2.0",
+            "resultCode": "OK",
+            "output": {
+                "our_league_name": request_league,
+                "return_league_date1": three_events[-1]["dateEvent"],
+                "return_homename1": three_events[-1]["strHomeTeam"],
+                "return_awayname1": three_events[-1]["strAwayTeam"],
+                "return_league_date2": three_events[-2]["dateEvent"],
+                "return_homename2": three_events[-2]["strHomeTeam"],
+                "return_awayname2": three_events[-2]["strAwayTeam"],
+            },
+        }
+        return Response(response_builder)
+ ```
+ 나머지 리그와 팀의 경우, NUGU를 통해 들어온 한국어로 된 리그나 팀명을 league_and_leagueid.json으로 매칭하여 `leagueid`를 구하였다. 구한 `league_id`로 검색 가능한 thesportsdb api를 활용하여 3개의 앞으로의 일정을 구하였다.
+ ```{python}
+      else:
+            with open("configure_package/team_and_teamid.json") as other_team:
+                other_team_list = json.load(other_team)
+            team_id = other_team_list[request_team]
+
+            other_team_schedule_url = (
+                f"https://www.thesportsdb.com/api/v1/json/1/eventsnext.php?id={team_id}"
+            )
+            r = requests.get(other_team_schedule_url).text
+            three_events = json.loads(r)["events"][2:5]
+
+            response_builder = {
+                "version": "2.0",
+                "resultCode": "OK",
+                "output": {
+                    "our_team_name": request_team,
+                    "return_game_date1": three_events[-1]["dateEvent"],
+                    "return_away_name1": three_events[-1]["strAwayTeam"],
+                    "return_game_date2": three_events[-2]["dateEvent"],
+                    "return_away_name2": three_events[-2]["strAwayTeam"],
+                    "return_game_date3": three_events[0]["dateEvent"],
+                    "return_away_name3": three_events[0]["strAwayTeam"],
+                },
+            }
+
+        return Response(response_builder)
+```
+
+## 5. Terminology 
