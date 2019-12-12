@@ -1,11 +1,3 @@
----
-layout: post
-title:  "Welcome to 2OutFull!"
-date:   2019-11-26 17:32:44
-categories: jekyll update
-comments: true
----
-
 # 우리의 팀 멤버를 소개합니다.<br>
 
 팀명 : 2OutFull<br>
