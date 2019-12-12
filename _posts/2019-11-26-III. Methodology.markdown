@@ -7,11 +7,82 @@ comments: true
 ---
 
 
-(서버) django<br>
-	1. https://www.django-rest-framework.org/tutorial/quickstart/<br>
-(야구 - 선수 스탯) <br>
-	1. https://pypi.org/project/MLB-StatsAPI/<br>
-	2. https://toddrob99.github.io/MLB-StatsAPI/<br>
-  (nugu)<br>
-	1. https://sharedlp.sk.com/dlp/login/main.do<br>
-	2. https://developers-doc.nugu.co.kr/<br>
+## 1. PlayerStats
+한국과 관련있는 선수들의 스텟을 추출을 하기 위해 statsapi를 활용하였다. 
+api를 활용해서 선수들의 스텟을 추출하기 위해 선수의 그룹유형과 id가 필요하였기 때문에 데이터를 뽑아 둘의 값을 지정하였다.
+'''{python}
+class PlayerStats(APIView):
+    permission_classes = [AllowAny]
+    player_id = {
+        "류현진": 547943,
+        "오승환": 493200,
+        "추신수": 425783,
+        "강정호": 628356,
+        "최지만": 596847,
+    }
+    default_group = {
+        "류현진": "pitching",
+        "오승환": "pitching",
+        "추신수": "hitting",
+        "강정호": "fielding",
+        "최지만": "fielding",
+    }
+'''
+
+NUGU를 통해 값이 들어오면 available_picher_stats.json 파일을 활용하여 값을 api로 활용할 수 있게 변환시킨다.
+'''<avilable_picher_stats.json>
+{
+  "출장횟수": "gamesPlayed",
+  "땅볼아웃": "groundOuts",
+  "플라이아웃": "airOuts",
+  "득점": "runs",
+  "2루타": "doubles",
+  "3루타": "triples",
+  "홈런": "homeRuns",
+  "삼진아웃": "strikeOuts",
+  "볼넷": "baseOnBalls",
+  "고의사구": "intentionalWalks",
+  "안타": "hits",
+  "데드볼": "hitByPitch",
+  "타율": "avg",
+  "타수": "atBats",
+  "출루율": "obp",
+  "장타율": "slg",
+  "OPS": "ops",
+  "도루사": "caughtStealing",
+  "도루": "stolenBases",
+  "도루성공률": "stolenBasePercentage",
+  "더블플레이": "groundIntoDoublePlay",
+  "투구수": "numberOfPitches",
+  "타석수": "plateAppearances",
+  "총 루타수": "totalBases",
+  "득점타": "rbi",
+  "잔루": "leftOnBase",
+  "희생번트": "sacBunts",
+  "희생플라이": "sacFlies",
+  "바빕": "babip",
+  "땅볼아웃/뜬공아웃 비율": "groundOutsToAirouts",
+  "홈런 타율": "atBatsPerHomeRun"
+}
+'''
+'''{python}
+def post(self, request):
+    data = request.data["action"]
+    last_url = request.get_full_path().split("/")[-1]
+    if last_url == "pitcher-stat":
+        position = "pitcher"
+    else:
+        position = "hitter"
+    with open(f"configure_package/available_{position}_stats.json") as pitcher_json:
+        available_pitcher_stats = json.load(pitcher_json)
+    request_stat = data["parameters"][f"{position}_stat"]["value"]
+    player = data["parameters"][position]["value"]
+    player_stat = available_pitcher_stats[request_stat]
+'''
+
+다음은 직접 api로 스텟을 직접 추출한다. 
+## 2. NextGame
+
+## 3. Scheduler
+
+## 4. League_Scheduler
