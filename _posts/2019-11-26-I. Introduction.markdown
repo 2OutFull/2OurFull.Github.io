@@ -20,7 +20,9 @@ Choi Ji-Man | Tampa Bay Rays
 Kang Jung-Ho | Pittsburgh Pirates
 Oh Seung-Hwan | Colorado Rockies
 
-**1) to provide Korean player's basic stat information**
+**1) to provide Korean player's basic stat information** <br>
+![Picture 1. Basic stats of Choo Shin-soo](C:\Users\Jiwon\Desktop\880.png)
+<br>
 - the number of games played
 - the number of grounds out 
 - pitching stats
