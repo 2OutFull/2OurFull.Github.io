@@ -11,6 +11,7 @@ However, there is a limitation when people want to use the information that it i
 ### [2] Functions we provide
 In MLB, there are a few Korean players running overseas. The list of the name of players and teams is as follows:
 <br>
+
 Name | Team name
 ---- | ----
 Ryu Hyun-Jin | Los Angeles Dodgers
