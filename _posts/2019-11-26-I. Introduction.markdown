@@ -1,10 +1,10 @@
 ## Ⅰ. Introduction 
 
-### [1] Motivation of our project, 2OutFull <br>
-For too long, data has been treated as a liability and not an asset, often due to challenges to collecting, storing and managing massive volumes of it. Yet the ever-improving capabilities of big data platforms are creating undeniable opportunities for industries across the board – from medicine, construction, retail, to banking.
-Therefore, data is becoming recognized as one of the most important assets for innovation today, especially in sports, where benefits are reaped by both sportsmen and viewers alike. What distinguishes the winners from losers when it comes to data-driven sports, is that they have developed the ability to manage data as an asset. Because of this importance, moderen sports are becoming data-based sports. We are witnessing data becoming entrenched in sports, especially in baseball. MLB, which stands for Major League Baseball, is based on high-level data analytic technologies like Sabermetrics. Information that people can get from these data technologies is essential for game watchers because they can predict their favorite team or player's winning probabilities by using it.
+### [1] 스포츠 매니아 프로젝트의 동기<br>
+너무 오랫동안 데이터는 자산이 아닌 부채로 취급되어 왔으며, 종종 대량의 데이터를 수집, 저장 및 관리해야 하는 어려움으로 인해 처리되었다. 그러나 빅 데이터 플랫폼의 끊임없이 향상된 기능은 의료, 건설, 소매업, 은행업에 이르기까지 전반적으로 업계에 부인할 수 없는 기회를 만들어 내고 있다.
+따라서 데이터는 오늘날 혁신을 위한 가장 중요한 자산 중 하나로 인식되고 있으며, 특히 스포츠맨과 시청자들 모두에게 혜택이 돌아가는 스포츠에서는 더욱 그러하다. 데이터 중심의 스포츠에서 승자와 패자를 구분하는 것은 데이터를 자산으로 관리하는 능력을 키웠다는 점이다. 이러한 중요성 때문에 모드렌 스포츠는 데이터 기반의 스포츠가 되고 있다. 우리는 데이터가 스포츠, 특히 야구에서 고착되는 것을 목격하고 있다. 메이저리그의 약자인 MLB는 세이버메트릭스와 같은 고도의 데이터 분석 기술을 기반으로 한다. 사람들이 이러한 데이터 기술로부터 얻을 수 있는 정보는 게임 시청자들에게 필수적이다. 왜냐하면 그들은 그들이 좋아하는 팀이나 플레이어의 우승 확률을 그것을 이용하여 예측할 수 있기 때문이다.
 
-However, there is a limitation when people want to use the information that it is one-way provided. This means that people are only able to access the data only when broadcasters and commentators provide them. People cannot get the dataset that they are wondering and whenever they want. So we want to provide people with a user-friendly, easily accessible program through which people can get baseball related information whenever they want. Also to lessen the burden for people to search the information on the Internet, we are going to use the SKT NUGU AI speaker. This device will give interesting baseball game-related information to users much faster and easier.
+그러나 일방적 제공이라는 정보를 이용하려는 사람들에게는 한계가 있다. 이는 방송사와 해설자가 자료를 제공해야 국민들이 데이터에 접근할 수 있다는 것을 의미한다. 사람들은 그들이 궁금해 하는 데이터 세트를 원할 때마다 얻을 수 없다. 그래서 우리는 사람들이 원할 때 언제든지 야구 관련 정보를 얻을 수 있는 사용자 친화적이고 쉽게 접근할 수 있는 프로그램을 사람들에게 제공하기를 원한다. 또한 인터넷에서 정보를 검색하는 사람들의 부담을 줄이기 위해 SKT NUGU AI 스피커를 사용할 것이다. 이 장치는 사용자에게 야구 게임과 관련된 흥미로운 정보를 훨씬 더 빠르고 쉽게 제공할 것이다.
 <br>
 <br>
 
