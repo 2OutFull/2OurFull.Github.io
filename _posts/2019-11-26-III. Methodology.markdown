@@ -28,7 +28,7 @@ class PlayerStats(APIView):
         "최지만": "fielding",
     }
 ```
-NUGU를 통해 값이 들어오면 available_picher_stats.json 파일을 활용하여 값을 api로 활용할 수 있게 변환시킨다.
+NUGU를 통해 값이 들어오면 available_picher_stats.json 파일을 활용하여 값을 api로 활용할 수 있게 변환시킨다. available_pitcher_stats으로 NUGU에서 들어온 한글발화값을 원하는 속성으로 바꾸게끔 한다.
 ```
 (avilable_picher_stats.json)
 {
@@ -79,7 +79,7 @@ def post(self, request):
     player = data["parameters"][position]["value"]
     player_stat = available_pitcher_stats[request_stat]
 ```
-다음은 직접 api로 스텟을 직접 추출한다.
+다음은 직접 api로 스텟을 직접 추출한다. statsapi에서 원하는 선수의 스텟을 뽑기 위해서는 `playerid`, `groupid`, `season`를 요구하기 때문에 각각 알맞는 value를 넣어준다.
 ```{python}
 return_stat = statsapi.player_stat_data(
             self.player_id[player], self.default_group[player], "season"
