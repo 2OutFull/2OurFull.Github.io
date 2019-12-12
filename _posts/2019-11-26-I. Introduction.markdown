@@ -8,31 +8,31 @@
 <br>
 <br>
 
-### [2] Functions we provide
-In MLB, there are a few Korean players running overseas. The list of the name of players and teams is as follows:
+### [2] 우리가 제공하는 기능
+MLB에는 해외에서 뛰고 있는 한국 선수들이 몇 명 있다. 선수와 팀의 이름은 다음과 같다.
 <br>
 
-Name | Team name
+이름 | 팀 이름
 ---- | ----
-Ryu Hyun-Jin | Los Angeles Dodgers
-Choo Shin-soo | Texas Rangers
-Choi Ji-Man | Tampa Bay Rays
-Kang Jung-Ho | Pittsburgh Pirates
-Oh Seung-Hwan | Colorado Rockies
+류현진 | 로스앤젤레스 다저스
+추신수 | 텍사스 레인저스
+최지만 | 템파베이 레이스
+강정호 | 피츠버그 파이리츠
+오승환 | 콜로라도 로키스
 
-**1) to provide Korean player's basic stat information**
-- the number of games played
-- the number of grounds out 
-- pitching stats
-- hitting stats
-- season team stats
-- the score that player eared(runs)
-- OBP (On Base Percentage)
-- SLG (Slugging Average)
-- OPS(On base Plus Slugging) etc.
+**1) 한국 선수의 기본 통계 정보를 제공**
+- 경기 횟수
+- 땅볼 아웃 수
+- 피칭 스탯
+- 타격 스탯
+- 시즌 팀 스탯
+- 자책점
+- 타수
+- 타석수
+- OPS
 
-**2) to provide game schedules by teams and players** <br>
-Users can get the game schedule information by teams or players by asking related questions to NUGU AI speaker.
+**2) 팀과 선수별로 경기 일정을 제공** <br>
+이용자는 NUGU AI 스피커에 관련 질문을 해 팀이나 선수별로 경기 일정 정보를 얻을 수 있다.
 
-**3) to explain baseball glossaries to users** <br>
-Many baseball terminologies are abbreviations and hard to figure out at first glance. So we designed to get the meaning of those terms by asking NUGU AI speaker. We will refer MLB official site(http://m.mlb.com/glossary).
+**3) 야구 용어집을 사용자에게 설명** <br>
+많은 야구 용어들은 약어여서 언뜻 보기에 이해하기 어렵다. 그래서 우리는 NUGU AI 스피커에 물어봄으로써 그 용어의 의미를 알 수 있도록 설계되었다. 우리는 MLB 공식 사이트를 참조할 것이다.(http://m.mlb.com/glossary).
