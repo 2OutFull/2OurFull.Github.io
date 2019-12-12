@@ -29,7 +29,8 @@ class PlayerStats(APIView):
     }
 ```
 NUGU를 통해 값이 들어오면 available_picher_stats.json 파일을 활용하여 값을 api로 활용할 수 있게 변환시킨다.
-```<avilable_picher_stats.json>
+```
+(avilable_picher_stats.json)
 {
   "출장횟수": "gamesPlayed",
   "땅볼아웃": "groundOuts",
@@ -84,6 +85,8 @@ return_stat = statsapi.player_stat_data(
             self.player_id[player], self.default_group[player], "season"
         )["stats"][0]["stats"][player_stat]
 ```
+이제 리턴값의 종류를 str인지 int인지 구별하여 적절한 대답을 할 수 있도록 구분한뒤,
+선수이름,요구한 스텟,요구한 스텟의 결과값을 NUGU에 전송한다.
 ## 2. NextGame
 
 ## 3. Scheduler
