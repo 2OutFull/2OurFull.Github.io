@@ -36,3 +36,16 @@ MLB에는 해외에서 뛰고 있는 한국 선수들이 몇 명 있다. 선수�
 
 **3) 야구 용어집을 사용자에게 설명** <br>
 많은 야구 용어들은 약어여서 언뜻 보기에 이해하기 어렵다. 그래서 우리는 NUGU AI 스피커에 물어봄으로써 그 용어의 의미를 알 수 있도록 설계되었다. 우리는 MLB 공식 사이트를 참조할 것이다.(http://m.mlb.com/glossary).
+## [3] 참조한 사이트/링크
+(서버) Django<br>
+	1. https://www.django-rest-framework.org/tutorial/quickstart/<br>
+(야구 - 선수 스탯) <br>
+	1. https://pypi.org/project/MLB-StatsAPI/<br>
+	2. https://toddrob99.github.io/MLB-StatsAPI/<br>
+(야구 - 팀 일정)
+	1. https://pypi.org/project/MLB-StatsAPI/<br>
+(스포츠 - 팀,리그 일정)	
+	1. https://www.thesportsdb.com<br>
+  (nugu)<br>
+	1. https://sharedlp.sk.com/dlp/login/main.do<br>
+	2. https://developers-doc.nugu.co.kr/<br>
