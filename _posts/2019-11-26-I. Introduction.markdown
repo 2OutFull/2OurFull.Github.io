@@ -1,37 +1,39 @@
----
-layout: post
-title:  "I. Introduction"
-date:   2019-11-26 18:10:08
-categories: Lorem
-comments: true
----
-## - Motivation: Why are you doing this? <br>
+## Ⅰ. Introduction
 
-Modern sports are data-basedsports. Among them, MLB is based on high-level data technologies such as Sabermetrics. <br>
-These data technologies are also easily accessible when we watching the MLB game of Korean players'such as Ryu Hyun-jin, Choo Shin-soo and Choi Ji-man. <br>
-However, there is alimitation that it is one-way data providing. That means we are only able <br> toaccess data that broadcaster and commentators provided. We cannot get the datathat we are wondering. <br>
-So we want to<br> provideuser-friendly baseball data using NUGU AI speakers in voice to provide a lot ofinteresting information that users want.<br> 
-We will use MLB-StatsAPI(https://pypi.org/project/MLB-StatsAPI/)and other APIs to build the application. <br>
-And we will use<br> NUGU API and speakertoo. For server side, we will use AWS EC2(provisional). <br>
-First, we provide gameschedule for requested teams and players. And then if users ask some data,application will provide data in voice. <br>
-In particular, we will provide a variety of interesting data, including basicstats, and situational statistic data etc focusing on Korean players We will also provide avoice function that explains baseball's stat analysis terms to help usersunderstand them and other external element data. <br>
-Finally, by theseprovided data, we build simple algorithm to predict the winner, and tell theusers when asked.<br>
-만일 빠른 시일 내에 위 프로그램을 완성한다면, 해당 프로그램의 틀을 기반으로 football-data-api==0.0.6(https://pypi.org/project/football-data-api/0.0.6/)와 같은<br> API를 사용하여 사용자가 원하는 정보를 제공하는 시스템을 다른 스포츠 버전으로도 만들 계획입니다.
+### 1. Motivation of our project, 2OutFull
+
+For too long, data has been treated as a liability and not an asset, often due to challenges to collecting, storing and managing massive volumes of it. Yet the ever-improving capabilities of big data platforms are creating undeniable opportunities for industries across the board – from medicine, construction, retail, to banking. Therefore, data is becoming recognized as one of the most important assets for innovation today, especially in sports, where benefits are reaped by both sportsmen and viewers alike. What distinguishes the winners from losers when it comes to data-driven sports, is that they have developed the ability to manage data as an asset. Because of this importance, **moderen sports** are becoming **data-based sports**. We are witnessing data becoming entrenched in sports, especially in baseball. MLB, which stands for Major League Baseball, is based on high-level data analytic technologies like Sabermetrics. Information that people can get from these data technologies is essential for game watchers because they can predict their favorite team or player's winning probabilities by using it.
+
+However, there is a limitation when people want to use the information that it is one-way provided. This means that people are only able to access the data only when broadcasters and commentators provide them. People cannot get the dataset that they are wondering and whenever they want. So we want to provide people with a user-friendly, easily accessible program through which people can get baseball related information whenever they want. Also to lessen the burden for users to search the information on the Internet, we are going to use the SKT NUGU AI speaker. This device will give interesting baseball game-related information to users much faster and easier.
 
 <br>
 <br>
-## - What do you want to see at the end? <br>
 
-예시)<br>
-	-선수의 스탯/성적<br>
-		<질문> "아리아, 류현진 작년 포스트 시즌 성적 알려줘" <br>
-		<답변> "류현진의 2018년 포스트시즌 성적은 4경기 1승 2패 ERA 7.71 WHIP 1.50입니다."<br>
-	- 경기 일정<br>
-		<질문> "아리아, 황의조 경기 언제 해?"<br>
-		<답변> "황의조의 보르도의 가장 가까운 경기는 한국시간기준 11월 24일 일요일 23시 입니다."<br>
-	- 야구 용어<br>
-		<질문> "아리아, WHIP이 뭐야? "<br>
-		<답변> "WHIP이란 투수의 이닝 당 출루 허용률로 ... (이하생략)"<br>
+### 2. Functions we provide
 
+In MLB, there are a few Korean players running overseas. The list of the name of players and teams is as follows: <br>
 
+Name | Team name
+---- | ----
+Ryu Hyun-Jin | Los Angeles Dodgers
+Choo Shin-soo | Texas Rangers
+Choi Ji-Man | Tampa Bay Rays
+Kang Jung-Ho | Pittsburgh Pirates
+Oh Seung-Hwan | Colorado Rockies
 
+**1) to provide Korean player's basic stat information**
+- the number of games played
+- the number of grounds out 
+- pitching stats
+- hitting stats
+- season team stats
+- the score that player eared(runs)
+- OBP (On Base Percentage)
+- SLG (Slugging Average)
+- OPS(On base Plus Slugging) etc.
+
+**2) to provide game schedules by teams and players**
+Users can get the game schedule information by teams or players by asking related questions to NUGU AI speaker.
+
+**3) to explain baseball glossaries to users**
+Many baseball terminologies are abbreviations and hard to figure out at first glance. So we designed to get the meaning of those terms by asking NUGU AI speaker. We will refer MLB official site(http://m.mlb.com/glossary). 
