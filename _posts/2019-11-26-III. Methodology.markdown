@@ -328,3 +328,4 @@ team_id = mlb_team_list[request_team]
 ```
 
 ## 5. Terminology 
+야구 용어 중 어렵고 전문적인 것들이 많기 때문에 사용자가 용어에 대해 질문하면 이에 대해 대답해 주는 기능을 추가하였다.
