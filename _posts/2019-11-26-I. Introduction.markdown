@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "I. Introduction"
+date:   2019-11-26 18:10:08
+categories: Lorem
+comments: true
+---
+
 ## Ⅰ. Introduction 
 
 ### [1] 스포츠 매니아 프로젝트의 동기<br>
