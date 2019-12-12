@@ -31,8 +31,8 @@ Oh Seung-Hwan | Colorado Rockies
 - SLG (Slugging Average)
 - OPS(On base Plus Slugging) etc.
 
-**2) to provide game schedules by teams and players**
+**2) to provide game schedules by teams and players** <br>
 Users can get the game schedule information by teams or players by asking related questions to NUGU AI speaker.
 
-**3) to explain baseball glossaries to users**
+**3) to explain baseball glossaries to users** <br>
 Many baseball terminologies are abbreviations and hard to figure out at first glance. So we designed to get the meaning of those terms by asking NUGU AI speaker. We will refer MLB official site(http://m.mlb.com/glossary).
