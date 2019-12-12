@@ -1,17 +1,13 @@
----
-layout: post
-title:  "Welcome to 2OutFull!"
-date:   2019-11-26 17:32:44
-categories: jekyll update
-comments: true
----
+# Team members of 2OutFull <br>
 
-# 우리의 팀 멤버를 소개합니다.<br>
+## AI project name: 2사만루(2OutFull) <br>
 
-팀명 : 2OutFull<br>
+### Team members <br>
 
-윤재희, 	정보시스템학과  2017029098<br>
-이영훈,  자원환경공학과2014002460<br>
-이하민, 	정보시스템학과  2017029134<br>
-최지수, 	정보시스템학과  2017029216<br>
-허지원, 	정보시스템학과  2017029098<br>
+Name | Department | Student Number
+---- | ---- | ---- 
+이영훈 | 자원환경공학과 | 2014002460
+윤재희 | 정보시스템학과 | 2017029098
+이하민 | 정보시스템학과 | 2017029134
+최지수 | 정보시스템학과 | 2017029216
+허지원 | 정보시스템학과 | 2016059243
