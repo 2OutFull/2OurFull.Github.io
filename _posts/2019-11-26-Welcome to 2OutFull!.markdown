@@ -1,4 +1,4 @@
-# Team members of 2OutFull <br>
+# Team members of [2OutFull] <br>
 
 ## AI project name: 2사만루(2OutFull) <br>
 
