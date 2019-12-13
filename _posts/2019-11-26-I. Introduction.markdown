@@ -5,33 +5,55 @@ date:   2019-11-26 18:10:08
 categories: Lorem
 comments: true
 ---
-## - Motivation: Why are you doing this? <br>
 
-Modern sports are data-basedsports. Among them, MLB is based on high-level data technologies such as Sabermetrics. <br>
-These data technologies are also easily accessible when we watching the MLB game of Korean players'such as Ryu Hyun-jin, Choo Shin-soo and Choi Ji-man. <br>
-However, there is alimitation that it is one-way data providing. That means we are only able <br> toaccess data that broadcaster and commentators provided. We cannot get the datathat we are wondering. <br>
-So we want to<br> provideuser-friendly baseball data using NUGU AI speakers in voice to provide a lot ofinteresting information that users want.<br> 
-We will use MLB-StatsAPI(https://pypi.org/project/MLB-StatsAPI/)and other APIs to build the application. <br>
-And we will use<br> NUGU API and speakertoo. For server side, we will use AWS EC2(provisional). <br>
-First, we provide gameschedule for requested teams and players. And then if users ask some data,application will provide data in voice. <br>
-In particular, we will provide a variety of interesting data, including basicstats, and situational statistic data etc focusing on Korean players We will also provide avoice function that explains baseball's stat analysis terms to help usersunderstand them and other external element data. <br>
-Finally, by theseprovided data, we build simple algorithm to predict the winner, and tell theusers when asked.<br>
-만일 빠른 시일 내에 위 프로그램을 완성한다면, 해당 프로그램의 틀을 기반으로 football-data-api==0.0.6(https://pypi.org/project/football-data-api/0.0.6/)와 같은<br> API를 사용하여 사용자가 원하는 정보를 제공하는 시스템을 다른 스포츠 버전으로도 만들 계획입니다.
+## Ⅰ. Introduction 
 
+### [1] 스포츠 매니아 프로젝트의 동기<br>
+너무 오랫동안 데이터는 자산이 아닌 골칫거리로 취급되어 왔으며, 종종 대량의 데이터를 수집, 저장 및 관리해야 하는 어려움으로 인해 처리되었다. 그러나 빅 데이터 플랫폼의 끊임없이 향상된 기능은 의료, 건설, 소매업, 은행업에 이르기까지 전반적으로 업계에 부인할 수 없는 기회를 만들어 내고 있다.
+따라서 데이터는 오늘날 혁신을 위한 가장 중요한 자산 중 하나로 인식되고 있으며, 특히 스포츠맨과 시청자들 모두에게 혜택이 돌아가는 스포츠에서는 더욱 그러하다. 데이터 중심의 스포츠에서 승자와 패자를 구분하는 것은 데이터를 자산으로 관리하는 능력을 키웠다는 점이다. 이러한 중요성 때문에 모드렌 스포츠는 데이터 기반의 스포츠가 되고 있다. 우리는 데이터가 스포츠, 특히 야구에서 고착되는 것을 목격하고 있다. 메이저리그의 약자인 MLB는 세이버메트릭스와 같은 고도의 데이터 분석 기술을 기반으로 한다. 사람들이 이러한 데이터 기술로부터 얻을 수 있는 정보는 게임 시청자들에게 필수적이다. 왜냐하면 그들은 그들이 좋아하는 팀이나 플레이어의 우승 확률을 그것을 이용하여 예측할 수 있기 때문이다.
+
+그러나 일방적 제공이라는 정보를 이용하려는 사람들에게는 한계가 있다. 이는 방송사와 해설자가 자료를 제공해야 국민들이 데이터에 접근할 수 있다는 것을 의미한다. 사람들은 그들이 궁금해 하는 데이터 세트를 원할 때마다 얻을 수 없다. 그래서 우리는 사람들이 원할 때 언제든지 야구 관련 정보를 얻을 수 있는 사용자 친화적이고 쉽게 접근할 수 있는 프로그램을 사람들에게 제공하기를 원한다. 또한 인터넷에서 정보를 검색하는 사람들의 부담을 줄이기 위해 SKT NUGU AI 스피커를 사용할 것이다. 이 장치는 사용자에게 야구 게임과 관련된 흥미로운 정보를 훨씬 더 빠르고 쉽게 제공할 것이다.
 <br>
 <br>
-## - What do you want to see at the end? <br>
 
-예시)<br>
-	-선수의 스탯/성적<br>
-		<질문> "아리아, 류현진 작년 포스트 시즌 성적 알려줘" <br>
-		<답변> "류현진의 2018년 포스트시즌 성적은 4경기 1승 2패 ERA 7.71 WHIP 1.50입니다."<br>
-	- 경기 일정<br>
-		<질문> "아리아, 황의조 경기 언제 해?"<br>
-		<답변> "황의조의 보르도의 가장 가까운 경기는 한국시간기준 11월 24일 일요일 23시 입니다."<br>
-	- 야구 용어<br>
-		<질문> "아리아, WHIP이 뭐야? "<br>
-		<답변> "WHIP이란 투수의 이닝 당 출루 허용률로 ... (이하생략)"<br>
+### [2] 우리가 제공하는 기능
+MLB에는 해외에서 뛰고 있는 한국 선수들이 몇 명 있다. 선수와 팀의 이름은 다음과 같다.
+<br>
 
+이름 | 팀 이름
+---- | ----
+류현진 | 로스앤젤레스 다저스
+추신수 | 텍사스 레인저스
+최지만 | 템파베이 레이스
+강정호 | 피츠버그 파이리츠
+오승환 | 콜로라도 로키스
 
+**1) 한국 선수의 기본 통계 정보를 제공**
+- 경기 횟수
+- 땅볼 아웃 수
+- 피칭 스탯
+- 타격 스탯
+- 시즌 팀 스탯
+- 자책점
+- 타수
+- 타석수
+- OPS
 
+**2) 팀과 선수별로 경기 일정을 제공** <br>
+이용자는 NUGU AI 스피커에 관련 질문을 해 팀이나 선수별로 경기 일정 정보를 얻을 수 있다.
+
+**3) 야구 용어집을 사용자에게 설명** <br>
+많은 야구 용어들은 약어여서 언뜻 보기에 이해하기 어렵다. 그래서 우리는 NUGU AI 스피커에 물어봄으로써 그 용어의 의미를 알 수 있도록 설계되었다. 우리는 MLB 공식 사이트를 참조할 것이다.<http://m.mlb.com/glossary>.
+### [3] 참조한 사이트/링크
+(서버) Django<br>
+	1. <https://www.django-rest-framework.org/tutorial/quickstart/> <br>
+(야구 - 선수 스탯) <br>
+	1. <https://pypi.org/project/MLB-StatsAPI/> <br>
+	2. <https://toddrob99.github.io/MLB-StatsAPI/> <br>
+(야구 - 팀 일정)
+	1. <https://pypi.org/project/MLB-StatsAPI/> <br>
+(스포츠 - 팀,리그 일정)	
+	1. <https://www.thesportsdb.com> <br>
+  (nugu)<br>
+	1. <https://sharedlp.sk.com/dlp/login/main.do> <br>
+	2. <https://developers-doc.nugu.co.kr/> <br>

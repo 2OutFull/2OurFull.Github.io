@@ -1,14 +1,14 @@
 # Site settings
-title: 2OutFull
+title: Sports_Mania
 email: ggamini7@gmail.com
 description: Give us A+
 baseurl: ""
-url: "http://2outfull.Github.io"
+url: "http://2OutFull.Github.io"
 
 author:
   name     : 'Hamin Lee'
   email    : ggamini7@gmail.com
-  url      : http://2outfull.Github.io
+  url      : http://2OutFull.Github.io
   facebook : 
   twitter  : 
 
