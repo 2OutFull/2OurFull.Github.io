@@ -23,7 +23,7 @@ comments: true
 - APF : 각 구단의 IPF 총합 / 구단수
 - 최종 적용 팩터 : IPF / APF
 
-## 
+
 
 ## 의문사항
 
