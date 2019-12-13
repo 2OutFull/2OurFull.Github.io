@@ -1,0 +1,450 @@
+{
+  "taggedSentenceList": [
+    {
+      "ask_OutFielder": [
+        "아웃필더가 뭐야?",
+        "외야수가 뭐야?"
+      ],
+      "ask_OPS": [
+        "OPS가 뭐야?"
+      ],
+      "ask_Infielder": [
+        "인필더가 뭐야?",
+        "내야수가 뭐야?"
+      ],
+      "ask_DH": [
+        "지명타자가 뭐야?"
+      ],
+      "ask_MRP": [
+        "미들 릴리버가 뭐야?"
+      ],
+      "ask_LRP": [
+        "롱 릴리버가 뭐야"
+      ],
+      "ask.airOuts": [
+        "[HITTER:HITTER]추신수[/HITTER:HITTER] [STAT:STAT]뜬공아웃[/STAT:STAT] 알려줘"
+      ],
+      "ask.groundOut": [
+        "[HITTER:HITTER]추신수[/HITTER:HITTER] 땅볼 아웃 알려줘",
+        "[HITTER:HITTER]추신수[/HITTER:HITTER] [STAT:STAT]땅볼아웃[/STAT:STAT] 알려줘"
+      ],
+      "ask.gameStarted": [
+        "추신수 선발 수 알려줘"
+      ],
+      "ask.player.schedule": [
+        "[PLAYER:PLAYER]류현진[/PLAYER:PLAYER] 선수 [DATE:DATE]과거[/DATE:DATE] [GAME_TERMINOLOGY:GAME_TERMINOLOGY]야구[/GAME_TERMINOLOGY:GAME_TERMINOLOGY] [SCHEDULE_TERMINOLOGY:SCHEDULE_TERMINOLOGY]일정[/SCHEDULE_TERMINOLOGY:SCHEDULE_TERMINOLOGY] [STATEMENT:STATEMENT]알려줘[/STATEMENT:STATEMENT]",
+        "[PLAYER:PLAYER]류현진[/PLAYER:PLAYER] [DATE:DATE]과거[/DATE:DATE] [GAME_TERMINOLOGY:GAME_TERMINOLOGY]야구[/GAME_TERMINOLOGY:GAME_TERMINOLOGY] [SCHEDULE_TERMINOLOGY:SCHEDULE_TERMINOLOGY]일정[/SCHEDULE_TERMINOLOGY:SCHEDULE_TERMINOLOGY] [STATEMENT:STATEMENT]알려줘[/STATEMENT:STATEMENT]"
+      ],
+      "ask_battery": [
+        "배터리가 뭐야?"
+      ],
+      "ask.Sacrifice_Hit": [
+        "희생 번트가 뭐야"
+      ],
+      "ask_Back_to_Back_HR": [
+        "백투백 홈런이 뭐야?"
+      ],
+      "ask.team.schedule": [
+        "[TEAM:TEAM]로스앤젤레스 다저스[/TEAM:TEAM] [DATE:DATE]과거[/DATE:DATE] [GAME_TERMINOLOGY:GAME_TERMINOLOGY]야구[/GAME_TERMINOLOGY:GAME_TERMINOLOGY] [SCHEDULE_TERMINOLOGY:SCHEDULE_TERMINOLOGY]일정[/SCHEDULE_TERMINOLOGY:SCHEDULE_TERMINOLOGY] [STATEMENT:STATEMENT]알려줘[/STATEMENT:STATEMENT]",
+        "[TEAM:TEAM]로스앤젤레스 다저스[/TEAM:TEAM] 팀 [DATE:DATE]과거[/DATE:DATE] [GAME_TERMINOLOGY:GAME_TERMINOLOGY]야구[/GAME_TERMINOLOGY:GAME_TERMINOLOGY] [SCHEDULE_TERMINOLOGY:SCHEDULE_TERMINOLOGY]일정[/SCHEDULE_TERMINOLOGY:SCHEDULE_TERMINOLOGY] [STATEMENT:STATEMENT]알려줘[/STATEMENT:STATEMENT]"
+      ],
+      "ask_Pinch_Hitter": [
+        "대타자가 뭐야?"
+      ],
+      "ask_Pinch_Runner": [
+        "대주자가 뭐야?"
+      ],
+      "player-stats": [
+        "[PLAYER:PLAYER]추신수[/PLAYER:PLAYER] [STAT:STAT]홈런[/STAT:STAT] [STATEMENT:STATEMENT]몇개야[/STATEMENT:STATEMENT]?"
+      ],
+      "hitter_stat": [
+        "[HITTER:HITTER]추신수[/HITTER:HITTER] [HITTER_STAT:HITTER_STAT]타수[/HITTER_STAT:HITTER_STAT] 알려줘"
+      ],
+      "ask_SU": [
+        "셋업맨이 뭐야?"
+      ],
+      "ask.gamesPlayed": [
+        "[PLAYER:PLAYER]최지만[/PLAYER:PLAYER] 경기수 알려줘",
+        "[PLAYER:PLAYER]강정호[/PLAYER:PLAYER] 경기수 알려줘",
+        "[PLAYER:PLAYER]류현진[/PLAYER:PLAYER] 경기수 알려줘",
+        "[PLAYER:PLAYER]오승환[/PLAYER:PLAYER] 경기수 알려줘",
+        "[PLAYER:PLAYER]추신수[/PLAYER:PLAYER] 경기수 알려줘",
+        "[PLAYER:PLAYER]오승황[/PLAYER:PLAYER] 출장횟수 알려줘",
+        "[PLAYER:PLAYER]류현진[/PLAYER:PLAYER] 출장횟수 알려줘",
+        "[PLAYER:PLAYER]최지만[/PLAYER:PLAYER] 출장횟수 알려줘",
+        "[PLAYER:PLAYER]강정호[/PLAYER:PLAYER] 출장횟수 알려줘",
+        "[PLAYER:PLAYER]추신수[/PLAYER:PLAYER] 출장횟수 알려줘"
+      ],
+      "pitcher_stat": [
+        "[PITCHER:PITCHER]류현진[/PITCHER:PITCHER] [PITCHER_STAT:PITCHER_STAT]평균자책점[/PITCHER_STAT:PITCHER_STAT] 알려줘"
+      ],
+      "ask_FIP": [
+        "FIP이 무엇을 의미해",
+        "FIP이 무슨 뜻이야",
+        "FIP이 뭐야"
+      ],
+      "answer.GrandSlam": [
+        "만루 홈런이 뭐야",
+        "그랜드 슬램이 뭐야"
+      ],
+      "Ask.ERA": [
+        "평균자책점이 뭐야",
+        "ERA 뜻이 뭐야",
+        "ERA가 뭐야"
+      ],
+      "ask.Cycling_Hit": [
+        "사이클링 히트가 뭐야?"
+      ],
+      "ask_Start_Pitcher": [
+        "선발 투수가 뭐야?"
+      ],
+      "ask.Sacrifice_Fly": [
+        "희생플라이가 뭐야"
+      ],
+      "ask_Relief_Pitcher": [
+        "구원투수가 뭐야?"
+      ],
+      "ask.GIDP": [
+        "병살타가 뭐야",
+        "병살이 뭐야"
+      ],
+      "ask.ChuSinSu.past.baseball.schedule": [
+        "추신수 과거 야구 스케줄 있는 지 알려줘",
+        "추신수 과거 야구 스케줄 없어?",
+        "추신수 과거 야구 스케줄 있어?",
+        "추신수 과거 야구 스케줄 말해줄래?",
+        "추신수 과거 야구 스케줄 어떻게 돼?",
+        "추신수 과거 야구 스케줄 알려줄래?",
+        "추신수 과거 야구 스케줄 알고 싶어",
+        "추신수 과거 야구 스케줄 말해줘",
+        "추신수 과거 야구 스케줄 알려줘"
+      ],
+      "ask_CP": [
+        "마무리 투수가 뭐야?"
+      ]
+    }
+  ],
+  "userDictList": [
+    {
+      "STATEMENT": {
+        " 언제인지 알아": [],
+        " 어때": [],
+        " 알고 싶어": [],
+        " 있는 지 알려줘": [],
+        " 언제 해": [],
+        " 언제 할까": [],
+        " 말해줄래": [],
+        " 알려줄래": [],
+        " 있어": [],
+        " 언제야": [],
+        " 말해줘": [],
+        " 없어": [],
+        "알려줘": [],
+        " 어떻게 돼": []
+      },
+      "PLAYER": {
+        "추신수": [
+          "신수",
+          "추선수"
+        ],
+        "오승환": [
+          "승환이"
+        ],
+        "최지만": [
+          "지만"
+        ],
+        "강정호": [
+          "정호"
+        ],
+        "류현진": [
+          "현진이"
+        ]
+      },
+      "POSITION": {
+        "셋업맨": [
+          "원포인트 릴리버"
+        ],
+        "마무리투수": [
+          "클로저"
+        ],
+        "롱 릴리버": [
+          "롱맨"
+        ],
+        "미들 릴러버": [
+          "미들맨"
+        ],
+        "지명타자": [
+          "DH"
+        ],
+        "구원투수": [
+          "계투",
+          "릴리버",
+          "RELIEF MAN"
+        ],
+        "대타자": [
+          "PH"
+        ],
+        "대주자": [
+          "PR"
+        ],
+        "선발투수": [
+          "SP",
+          "START PITCHER",
+          "스타터",
+          "RE"
+        ]
+      },
+      "GAME_TERMINOLOGY": {
+        "매치": [],
+        " 야구 경기": [],
+        " 시합": [],
+        " 경기": [],
+        "야구": [],
+        "야구 플레이": [],
+        "야구 게임": [],
+        "플레이": [],
+        " 야구 시합": []
+      },
+      "DATE": {
+        "과거": [],
+        " 어제": [],
+        " 앞으로": [],
+        " 지난": [],
+        " 미래": [],
+        " 최근": [],
+        " 오늘": [],
+        " 내일": []
+      },
+      "STAT": {
+        "땅볼 아웃": [],
+        "9이닝 당 스트라이크 수": [],
+        "승계주자 득점율": [],
+        "9이닝 당 4구 수": [],
+        "홀드": [],
+        "스트라이크": [],
+        "상대한 타자 수": [],
+        "피안타": [],
+        "9이닝 당 홈런 수": [],
+        "WHIP": [],
+        "세이브수": [],
+        "OPS": [],
+        "더블플레이": [],
+        "승리수": [],
+        "피안타율": [],
+        "피 장타율": [],
+        "투구 경기 수": [],
+        "2루타": [],
+        "이닝 당 투구 수": [],
+        "패배수": [],
+        "고의사구": [],
+        "9이닝 당 득점 수": [],
+        "플라이아웃": [],
+        "데드볼": [],
+        "볼넷": [],
+        "투구 수": [],
+        "세이브 기회": [],
+        "삼진아웃": [],
+        "도루사": [
+          "도루자",
+          "도루저지"
+        ],
+        "홈런": [],
+        "도루": [],
+        "홈런 타율": [],
+        "출장수": [],
+        "승계": [],
+        "실점": [],
+        "희생번트": [],
+        "도루성공확률": [],
+        "9이닝 당 안타 수": [],
+        "땅볼 플라이볼 비율": [],
+        "경기 종료 투수": [],
+        "폭투": [],
+        "득점": [],
+        "출루율": [],
+        "뜬공 아웃": [],
+        "땅볼아웃 뜬공아웃 비율": [],
+        "장타율": [],
+        "잔루": [],
+        "땅볼아웃": [],
+        "바빕": [
+          "BABIP"
+        ],
+        "몸에 맞는 공": [],
+        "3루타": [
+          "삼루타"
+        ],
+        "출장횟수": [],
+        "완봉": [],
+        "견제구": [],
+        "피홈런": [],
+        "승률": [],
+        "안타": [],
+        "희생플라이": [],
+        "삼진 볼넷 비율": [],
+        "평균자책점": [],
+        "도루성공률": [],
+        "투구 이닝": [],
+        "스트라이크 비율": [],
+        "보크": [],
+        "완투": [],
+        "투구수": [],
+        "타율": [],
+        "득점타": [],
+        "총 루타수": [],
+        "9이닝 당 볼넷 수": [],
+        "선발 수": [],
+        "경기수": [],
+        "타석수": []
+      },
+      "HITTER_STAT": {
+        "타수": [],
+        "득점": [],
+        "출루율": [],
+        "땅볼아웃 뜬공아웃 비율": [],
+        "장타율": [],
+        "잔루": [],
+        "땅볼아웃": [],
+        "OPS": [],
+        "더블플레이": [],
+        "바빕": [
+          "BABIP"
+        ],
+        "3루타": [
+          "삼루타"
+        ],
+        "출장횟수": [],
+        "2루타": [
+          "이루타"
+        ],
+        "안타": [],
+        "고의사구": [],
+        "희생플라이": [],
+        "플라이아웃": [],
+        "데드볼": [],
+        "도루성공률": [],
+        "볼넷": [],
+        "삼진아웃": [],
+        "도루사": [
+          "도루자",
+          "도루저지"
+        ],
+        "홈런": [],
+        "투구수": [],
+        "타율": [],
+        "득점타": [],
+        "도루": [],
+        "홈런 타율": [],
+        "총 루타수": [],
+        "희생번": [],
+        "타석수": []
+      },
+      "SCHEDULE_TERMINOLOGY": {
+        "일정": [],
+        " 스케쥴": [],
+        " 스케줄": [],
+        " 계획": []
+      },
+      "HITTER": {
+        "추신수": [],
+        "최지만": [],
+        "강정호": []
+      },
+      "PITCHER_STAT": {
+        "땅볼 아웃": [],
+        "9이닝 당 스트라이크 수": [],
+        "승계주자 득점율": [],
+        "홀드": [],
+        "피안타수": [],
+        "스트라이크": [],
+        "상대한 타자 수": [],
+        "9이닝 당 홈런 수": [],
+        "WHIP": [],
+        "세이브수": [],
+        "OPS": [],
+        "더블플레이": [
+          "병살"
+        ],
+        "승리수": [],
+        "피안타율": [],
+        "피 장타율": [],
+        "투구 경기 수": [],
+        "이닝 당 투구 수": [],
+        "패배수": [],
+        "고의사구": [],
+        "9이닝 당 득점 수": [],
+        "볼넷": [],
+        "투구 수": [],
+        "세이브 기회": [],
+        "삼진아웃": [],
+        "도루사": [],
+        "도루": [],
+        "실점": [],
+        "도루성공확률": [],
+        "9이닝 당 안타 수": [],
+        "땅볼 플라이볼 비율": [],
+        "경기 종료 투수": [],
+        "폭투": [],
+        "출루율": [],
+        "뜬공 아웃": [],
+        "승계주자": [],
+        "몸에 맞는 공": [],
+        "완봉": [],
+        "견제구": [],
+        "피홈런": [],
+        "승률": [],
+        "삼진 볼넷 비율": [],
+        "평균자책점": [],
+        "투구 이닝": [],
+        "스트라이크 비율": [],
+        "보크": [],
+        "완투": [],
+        "9이닝 당 볼넷 수": [
+          "9이닝 당 4구 수"
+        ],
+        "선발 수": [],
+        "경기수": [
+          "출장수"
+        ],
+        "타석수": [],
+        "자책점": []
+      },
+      "TERMINOLOGY": {
+        "배터리": [],
+        "OPS": [
+          "오피에스"
+        ],
+        "병살": [],
+        "ERA": [],
+        "사이클링 히트": [],
+        "그": [],
+        "희생 플라이": [],
+        "희생 번트": [],
+        "그랜드 슬램": [
+          "만루홈런"
+        ],
+        "FIP": [],
+        "인필더": [
+          "내야수"
+        ],
+        "아웃필더": [
+          "외야수"
+        ],
+        "백투백 홈런": [
+          "랑데뷰 홈런"
+        ]
+      },
+      "TEAM": {
+        " 텍사스 레인저스": [],
+        " 탬파베이 레이스": [],
+        " 콜로라도 로키스": [],
+        "로스앤젤레스 다저스": [],
+        " 피츠버그 파이리츠": []
+      },
+      "PITCHER": {
+        "오승환": [],
+        "류현진": []
+      }
+    }
+  ]
+}
